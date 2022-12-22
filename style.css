@@ -154,6 +154,15 @@ header {
 .contact-header .item + .item {
   margin-left: 50px;
 }
+.mail-ikon{
+  
+  width: 16px;
+  height: 12px;
+}
+.telefon-ikon{
+  width: 10px;
+  height: 16px;
+}
 .contact {
   color: var(--primery-text-color);
   font-weight: 500;
@@ -165,6 +174,7 @@ header {
 .contact-header {
   display: flex;
   margin-left: auto;
+  justify-content: baseline;
 }
 .contact-header .item {
   padding-top: 32px;
@@ -261,6 +271,17 @@ header {
   letter-spacing: 0.03em;
   background-color: #ffffff;
 }
+.feature-ikon{
+  width: 270px;
+  height: 120px;
+  background-color:var(--button-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+.ikon-feature{
+  width: 70px;
+  height: 70px;
+}
 .features-title {
   margin-bottom: 10px;
 
@@ -331,6 +352,21 @@ header {
 .team .team-text {
   text-align: center;
   margin-bottom: 30px;
+}
+.team-social{
+display: flex;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+
+}
+.social-icons{
+  gap:35px;
+}
+.social-ikon-item{
+  width: 20px;
+  height: 20px;
 }
 /*Footer  */
 .container-footer {
