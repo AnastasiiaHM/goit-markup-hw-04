@@ -21,37 +21,45 @@
   <body>
     <header class="main-header">
       <div class="container header-grow">
-    <nav class=" main-header">
-        
-       <a href="./index.html" lang="en" class="web logo"
-          >Web<span class="studio">Studio</span></a>
-       <ul class="utilited-ul site-nav">
+        <nav class="main-header">
+          <a href="./index.html" lang="en" class="web logo"
+            >Web<span class="studio">Studio</span></a
+          >
+          <ul class="utilited-ul site-nav">
+            <li class="item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item">
+              <a
+                href="./portfolio.html"
+                target="_blank"
+                class="link active-page"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="item">
+              <a href="" class="link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="utilited-ul contact-header">
           <li class="item">
-            <a href="./index.html" class="link " >Студія</a></li>
-          <li class="item">
-            <a href="./portfolio.html" target="_blank" class="link active-page"
-              >Портфоліо</a
+            <a href=" mailto:info@devstudio.com" class="contact header">
+              <svg class="mail-ikon">
+                <use href="./image/symbol-defs.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="" class="link">Контакти</a></li>
+            <a href="tel:+380961111111" class="contact header">
+              <svg class="telefon-ikon">
+                <use href="./image/symbol-defs.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      
-      </nav>
-      <ul class="utilited-ul contact-header">
-        <li class="item">
-          <a href=" mailto:info@devstudio.com" class="contact header"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="contact header"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
       </div>
-  </header>
+    </header>
     <main>
       <section class="section">
         <div class="container">
@@ -171,32 +179,88 @@
     </main>
     <footer class="footer">
       <div class="container container-footer">
-        <a href="./index.html" lang="en" class="web logo-footer"
-          >Web<span class="studio-footer">Studio</span></a
-        >
-        <address>
-          <ul class="contact utilited-ul">
-            <li>
+        <div class="footer-contacts">
+          <a href="./index.html" lang="en" class="web logo-footer"
+            >Web<span class="studio-footer">Studio</span></a
+          >
+
+          <address>
+            <ul class="contact utilited-ul">
+              <li>
+                <a
+                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="adress"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a href=" mailto:info@devstudio.com" class="contact footer"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="contact footer"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-add">
+          <p class="add-title">приєднуйтесь</p>
+          <ul class="social">
+            <li class="social-li">
               <a
-                href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                class="social-link social-link-add"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="adress"
-                >м. Київ, пр-т Лесі Українки, 26</a
               >
+                <svg class="social-ikon-item">
+                  <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href=" mailto:info@devstudio.com" class="contact footer"
-                >info@devstudio.com</a
+            <li class="social-li">
+              <a
+                class="social-link social-link-add"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg class="social-ikon-item">
+                  <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href="tel:+380961111111" class="contact footer"
-                >+38 096 111 11 11</a
+            <li class="social-li">
+              <a
+                class="social-link social-link-add"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg class="social-ikon-item">
+                  <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-li">
+              <a
+                class="social-link social-link-add"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-ikon-item">
+                  <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
