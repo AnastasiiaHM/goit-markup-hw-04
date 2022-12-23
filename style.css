@@ -34,6 +34,12 @@ ul {
   padding: 0px;
   margin: 0px;
 }
+
+a,
+ul {
+  text-decoration: none;
+  color: currentColor;
+}
 body {
   background-color: var(--primery-bg-color);
   color: var(--primery-text-color);
@@ -49,8 +55,7 @@ body {
   margin-right: auto;
 }
 .main-header {
-  display:flex;
- 
+  display: flex;
 }
 header {
   border-bottom: 1px solid #ececec;
@@ -154,22 +159,26 @@ header {
 .contact-header .item + .item {
   margin-left: 50px;
 }
-.mail-ikon{
-  
+.mail-ikon {
+  margin-right: 10px;
   width: 16px;
   height: 12px;
 }
-.telefon-ikon{
+.telefon-ikon {
+  margin-right: 10px;
   width: 10px;
   height: 16px;
 }
-.contact {
+.main-header .contact {
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-header {
   display: flex;
@@ -180,8 +189,11 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.contact .header:hover,
-.contact .header:focus {
+.contact-header {
+  text-align: center;
+}
+.contact-header:hover,
+.contact-header:focus {
   color: var(--active-color);
 }
 .contact .footer {
@@ -233,11 +245,25 @@ header {
 
 /*Hero*/
 .hero {
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("./image/hero.jpg");
+  /* background:linear-gradient
+  (to right,rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url('./image/hero.jpg'); */
+
   background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero .hero-title {
   margin-bottom: 30px;
   color: #ffffff;
@@ -271,14 +297,14 @@ header {
   letter-spacing: 0.03em;
   background-color: #ffffff;
 }
-.feature-ikon{
+.feature-ikon {
   width: 270px;
   height: 120px;
-  background-color:var(--button-color);
+  background-color: var(--button-color);
   padding: 25px 100px;
   margin-bottom: 30px;
 }
-.ikon-feature{
+.ikon-feature {
   width: 70px;
   height: 70px;
 }
@@ -353,20 +379,84 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
-.team-social{
-display: flex;
-justify-content: space-between;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 30px;
+.team-social {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  gap: 10px;
+  list-style: none;
+}
+.social {
+  display: flex;
+  gap: 10px;
+}
+.social-li {
+  display: flex;
+}
 
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
-.social-icons{
-  gap:35px;
-}
-.social-ikon-item{
+
+.social-ikon-item {
   width: 20px;
   height: 20px;
+  fill: var(--primery-text-color);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196f3;
+}
+.social-link:hover .social-ikon-item,
+.social-link:focus .social-ikon-item {
+  fill: var(--primery-bg-color);
+}
+
+/* our clients */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+.clients-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.clients-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+}
+.client-ikon-item {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.clients-link:focus .client-ikon-item,
+.clients-link:hover .client-ikon-item {
+  fill: var(--active-color);
+}
+.clients-item:focus,
+.clients-item:hover {
+  border: 1px solid var(--active-color);
 }
 /*Footer  */
 .container-footer {
@@ -398,7 +488,33 @@ margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
+.footer-add .social {
+  display: flex;
+}
+.add-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: #ffffff;
+}
+.container-footer {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 94px;
+}
+.footer-add {
+  width: 210px;
+}
+.footer-contacts {
+  width: 206px;
+}
+.social-link-add {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 /* Portfolio styles */
 
 .buttons-portfolio .button:hover,
