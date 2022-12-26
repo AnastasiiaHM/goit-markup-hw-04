@@ -481,14 +481,16 @@ header {
 .container-footer {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+ display: flex;
+ align-items: baseline;
 }
 .footer {
   display: flex;
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
+   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   display: inline-block;
@@ -598,8 +600,11 @@ header {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.portfolio-element:hover,
-.portfolio-element:focus {
+.portfolio-link{
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
