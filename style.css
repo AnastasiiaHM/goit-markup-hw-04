@@ -483,14 +483,17 @@ header {
   padding-right: 15px;
  display: flex;
  align-items: baseline;
+ padding-top: 60px;
+ padding-bottom: 60px;
 }
 .footer {
   display: flex;
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
-   padding-top: 60px;
+  padding-top: 60px;
   padding-bottom: 60px;
+
 }
 .logo-footer {
   display: inline-block;
@@ -510,6 +513,13 @@ header {
 }
 .contact-footer {
   color: rgba(255, 255, 255, 0.6);
+ 
+}
+.contact .contact-footer{
+  margin-bottom: 9px;
+}
+.contact-item{
+  text-decoration: none;
   margin-bottom: 9px;
 }
 .footer-add .social {
@@ -530,11 +540,16 @@ header {
   align-items: baseline;
   gap: 94px;
 }
+
 .footer-add {
-  width: 210px;
+  display: flex;
+  flex-direction: column;
+
 }
 .footer-contacts {
-  width: 206px;
+  display: flex;
+  flex-direction: column;
+
 }
 .social-link-add {
   background-color: rgba(255, 255, 255, 0.1);
